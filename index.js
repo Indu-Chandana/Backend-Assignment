@@ -10,7 +10,7 @@ app.use(bodyParser.json({ limit: "30mb", extended: true})); //for send over req
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
-
+//
 app.use('/user', users);
 app.get('/', (req, res) => {
     res.send('Hello to Users')
